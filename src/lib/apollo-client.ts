@@ -1,9 +1,10 @@
+// src\lib\apollo-client.ts
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 import { SchemaLink } from '@apollo/client/link/schema';
 import { schema } from '@/apollo/schema';
 import merge from 'deepmerge';
 
-let apolloClient: ApolloClient<any> | null = null;
+let apolloClient: ApolloClient | null = null;
 
 function createApolloClient(ssr = false) {
   const link = ssr
@@ -24,13 +25,17 @@ export function initializeApollo(initialState: any = null, ssr = false) {
   const _apolloClient = apolloClient ?? createApolloClient(ssr);
 
   if (initialState) {
-    const existingCache = _apolloClient.extract();
-    const data = merge(existingCache, initialState);
+    const existingCache = _apolloClient.extract() as Record<string, any>;
+    const data = merge<Record<string, any>>(existingCache, initialState as Record<string, any>);
     _apolloClient.cache.restore(data);
   }
 
-  if (typeof window === 'undefined') return _apolloClient;
+  if (ssr) return _apolloClient;
   if (!apolloClient) apolloClient = _apolloClient;
 
   return _apolloClient;
+}
+
+export function useApollo(initialState: any) {
+  return initializeApollo(initialState);
 }
