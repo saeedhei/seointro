@@ -10,14 +10,24 @@ function createApolloClient(ssr = false) {
   const link = ssr
     ? new SchemaLink({ schema }) // برای SSR بدون درخواست HTTP
     : new HttpLink({
-        uri: '/api/graphql',
+        uri: process.env.NEXT_PUBLIC_GRAPHQL_URL ?? '/api/graphql',
         credentials: 'same-origin',
       });
 
   return new ApolloClient({
     ssrMode: ssr,
     link,
-    cache: new InMemoryCache(),
+    cache: new InMemoryCache({
+      typePolicies: {
+        Query: {
+          fields: {
+            viewer: {
+              merge: true,
+            },
+          },
+        },
+      },
+    }),
   });
 }
 

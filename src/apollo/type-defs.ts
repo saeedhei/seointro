@@ -1,3 +1,4 @@
+// src\apollo\type-defs.ts
 import { gql } from 'graphql-tag';
 
 export const typeDefs = gql`

@@ -1,3 +1,4 @@
+// src\apollo\schema.ts
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { typeDefs } from './type-defs';
 import { resolvers } from './resolvers';

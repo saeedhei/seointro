@@ -4,7 +4,13 @@ import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import { NextRequest } from 'next/server';
 import { schema } from '@/apollo/schema';
 
-const server = new ApolloServer({ schema });
+const server = new ApolloServer({
+  schema,
+  formatError: (error) => {
+    console.error('GraphQL Error:', error);
+    return error;
+  },
+});
 
 const handler = startServerAndCreateNextHandler<NextRequest>(server, {
   context: async (req) => {
