@@ -5,11 +5,11 @@
 <details>
   <summary>architecture</summary>
 
-- [vip](https://github.com/saeedhei/seointro/blob/main/docs/architecture/vip.md)
+- [vip](architecture/vip.md)
 
-- [Load Balancer](https://github.com/saeedhei/seointro/tree/main/docs/architecture/Load-Balancer)
-  - [Cilium](https://github.com/saeedhei/seointro/blob/main/docs/architecture/Load-Balancer/Cilium.md)
-  - [Kube-VIPip](https://github.com/saeedhei/seointro/blob/main/docs/architecture/Load-Balancer/Kube-VIPip.md)
-  - [MetalLB](https://github.com/saeedhei/seointro/blob/main/docs/architecture/Load-Balancer/MetalLB.md)
+- [Load-balancer](architecture/Load-balancer)
+  - [Cilium](architecture/Load-balancer/Cilium.md)
+  - [Kube-VIPip](architecture/Load-balancer/Kube-VIPip.md)
+  - [MetalLB](architecture/Load-balancer/MetalLB.md)
 
 </details>
