@@ -7,9 +7,12 @@
 
 - [vip](architecture/vip.md)
 
-- [Load-balancer](architecture/Load-balancer)
+- <details>
+    <summary>Load-balancer</summary>
   - [Cilium](architecture/Load-balancer/Cilium.md)
   - [Kube-VIPip](architecture/Load-balancer/Kube-VIPip.md)
   - [MetalLB](architecture/Load-balancer/MetalLB.md)
+
+  </details>
 
 </details>
