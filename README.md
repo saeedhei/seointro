@@ -3,14 +3,17 @@
 ## Documentation
 
 <details>
-  <summary>docs</summary>
+  <summary>architecture</summary>
 
-- [Networking Layer](https://github.com/saeedhei/seointro/tree/main/docs/Networking-Layer)
-  - [vip](https://github.com/saeedhei/seointro/blob/main/docs/Networking-Layer/vip.md)
+- [vip](architecture/vip.md)
 
-  - [Load Balancer](https://github.com/saeedhei/seointro/tree/main/docs/Networking-Layer/Load-Balancer)
-    - [Cilium](https://github.com/saeedhei/seointro/blob/main/docs/Networking-Layer/Load-Balancer/Cilium.md)
-    - [Kube-VIPip](https://github.com/saeedhei/seointro/blob/main/docs/Networking-Layer/Load-Balancer/Kube-VIPip.md)
-    - [MetalLB](https://github.com/saeedhei/seointro/blob/main/docs/Networking-Layer/Load-Balancer/MetalLB.md)
+- <details>
+    <summary>Load-balancer</summary>
+    
+    - [Cilium](architecture/Load-balancer/Cilium.md)
+    - [Kube-VIPip](architecture/Load-balancer/Kube-VIPip.md)
+    - [MetalLB](architecture/Load-balancer/MetalLB.md)
+
+  </details>
 
 </details>
