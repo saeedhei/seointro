@@ -11,8 +11,8 @@
 <br>
 
 - [Cilium](docs/architecture/Load-Balancer/Cilium.md)
-- [Kube-VIP](docs/architecture/Load-balancer/Kube-VIP.md)
-- [MetalLB](docs/architecture/Load-balancer/MetalLB.md)
+- [Kube-VIP](docs/architecture/Load-Balancer/Kube-VIP.md)
+- [MetalLB](docs/architecture/Load-Balancer/MetalLB.md)
 
 </details>
 
