@@ -1,18 +1,19 @@
-# Project Name
+<details>
+<summary><strong>Architecture</strong></summary>
 
-## Documentation
+<br>
+
+- [vip](docs/architecture/vip.md)
 
 <details>
-  <summary>architecture</summary>
+<summary><strong>Load-balancer</strong></summary>
 
-- [vip](https://github.com/saeedhei/seointro/blob/main/docs/architecture/vip)
+<br>
 
-- <details>
-    <summary>Load-balancer</summary>
-    - [Cilium](architecture/Load-balancer/Cilium.md)
-    - [Kube-VIPip](architecture/Load-balancer/Kube-VIPip.md)
-    - [MetalLB](architecture/Load-balancer/MetalLB.md)
+- [Cilium](docs/architecture/Load-Balancer/Cilium.md)
+- [Kube-VIP](docs/architecture/Load-Balancer/Kube-VIP.md)
+- [MetalLB](docs/architecture/Load-Balancer/MetalLB.md)
 
-  </details>
+</details>
 
 </details>
